@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  margin: 0;
+  box-sizing: border-box;
+
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-gray-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  font-size: 18px;
+
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  background-color: var(--dark-cyan);
+  overflow: hidden;
+}
+
+.top-container, .bottom-container {
+  position: absolute;
+  
+}
+
+.top-container {
+  left: -10%;
+  top: -50%;
+}
+
+.bottom-container {
+  right: -10%;
+  bottom: -50%;
+}
+
+.top, .bottom {
+  height: 100vh;
+  width: 100vh;
+}
+
+.App {
+  height: 22rem;
+  width: 20rem;
+
+  background-color: white;
+
+  border-radius: 1.15rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0.1rem 0.5rem .6rem rgb(15, 121, 130, 0.9));
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-main {
+  height: 75%;
+}
+
+.cover {
+  background-image: url(./images/bg-pattern-card.svg);
+  height: 45%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -2.67rem;
+}
+
+.profile-pic {
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  border: white solid 6px;
+  cursor: pointer;
+  
+}
+
+.profile-id {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  
+}
+
+.name {
+  
+  margin-right: .5rem;
+  font-size: 1rem;
+   
+}
+
+.name, .stat {
+  color: var(--dark-desaturated-blue);
+  
+}
+
+.age, .location, .category {
+  color: var(--dark-gray-blue);
+}
+
+.location {
+  margin-top: -.5rem;
+  font-size: 0.90rem;
+}
+
+hr {
+  border: none;
+  background-color: hsla(0, 0%, 59%, 0.4);
+  height: 1px;
+  margin-top: -.5rem;
+  margin-bottom: 0;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 1.5rem 1rem;
+}
+
+.stat {
+  margin-bottom: 0;
+}
+
+.category {
+  margin-top: .35rem;
+  font-size: .70rem;
+  letter-spacing: .1rem;
+}
+
+
+
+
